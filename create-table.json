@@ -1,0 +1,27 @@
+{
+ "TableName": "three-o-eight-management-user",
+  "KeySchema": [
+    {
+      "AttributeName": "username",
+      "KeyType": "HASH"
+    },
+    {
+      "AttributeName": "hashedPassword",
+      "KeyType": "RANGE"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName":  "hashedPassword",
+      "AttributeType":  "S"
+    },
+    {
+      "AttributeName": "username",
+      "AttributeType": "S"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}

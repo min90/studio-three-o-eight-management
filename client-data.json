@@ -1,0 +1,87 @@
+{
+  "three-o-eight-management-clients": [
+    {
+      "PutRequest": {
+        "Item": {
+          "Revenues": {
+            "L": [
+              {
+                "M": {
+                  "FiscalYear": {
+                    "N": "2021"
+                  },
+                  "Revenue": {
+                    "N": "100000"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "FiscalYear": {
+                    "N": "2020"
+                  },
+                  "Revenue": {
+                    "N": "110000"
+                  }
+                }
+              }
+            ]
+          },
+          "Plannings": {
+            "L": [
+              {
+                "M": {
+                  "PortraitDate": {
+                    "S": "2021-02-06 10:00:00"
+                  },
+                  "RoadName": {
+                    "S": "Hjertegræsvej 11"
+                  },
+                  "City": {
+                    "S": "Odense NV"
+                  },
+                  "ZipCode": {
+                    "S": "5210"
+                  }
+                }
+              }
+            ]
+          },
+          "Id": {
+            "S": "dc00da79-3b49-4d52-ab4f-72c08e204a63"
+          },
+          "NatureSession": {
+            "N": "1"
+          },
+          "Info": {
+            "S": "På lørdag"
+          },
+          "AvailableFrom": {
+            "S": "2021-02-06 10:00:00"
+          },
+          "Name": {
+            "S": "Børnehuset Kronhjortløkken"
+          },
+          "Open": {
+            "N": "0"
+          },
+          "WithoutTimeslot": {
+            "N": "1"
+          },
+          "AvailableTo": {
+            "S": "2021-02-06 12:00:00"
+          },
+          "SiblingSession": {
+            "N": "1"
+          },
+          "Password": {
+            "S": "12345"
+          },
+          "Interval": {
+            "N": "5"
+          }
+        }
+      }
+    }
+  ]
+}

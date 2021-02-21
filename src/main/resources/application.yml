@@ -1,0 +1,20 @@
+micronaut:
+  application:
+    name: studieThreeOEightManagement
+  security:
+    authentication: bearer
+    token:
+      jwt:
+        generator:
+          access-token:
+            expiration: 7200
+        signatures:
+          secret:
+            generator:
+              secret: ecb07e35-3970-4724-8f86-d10728f5d46b
+              jws-algorithm: HS256
+
+  jackson:
+    deserialization:
+      failOnUnknownProperties: false
+
