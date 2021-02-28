@@ -1,8 +1,6 @@
 package studie.three.o.eight.management.domain;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.datatype.joda.deser.LocalDateTimeDeserializer;
 import org.joda.time.LocalDateTime;
 import studie.three.o.eight.management.domain.persistence.formatter.LocalDateTimeFormatter;
 

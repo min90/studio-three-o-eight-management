@@ -4,7 +4,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTypeConverted;
-import org.joda.time.LocalDateTime;
+import org.joda.time.LocalDate;
 import studie.three.o.eight.management.domain.persistence.formatter.LocalDateTimeFormatter;
 
 @DynamoDBDocument
@@ -12,46 +12,46 @@ public class Planning {
 
     @DynamoDBAttribute(attributeName = "PortraitDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime portraitDate;
+    private LocalDate portraitDate;
     @DynamoDBAttribute(attributeName = "NaturePortraitDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime naturePortraitDate;
+    private LocalDate naturePortraitDate;
     @DynamoDBAttribute(attributeName = "GroupPhotoDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime groupPhotoDate;
+    private LocalDate groupPhotoDate;
     @DynamoDBAttribute(attributeName = "StaffPortraitDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime staffPortraitDate;
+    private LocalDate staffPortraitDate;
     @DynamoDBAttribute(attributeName = "StaffGroupDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime staffGroupDate;
+    private LocalDate staffGroupDate;
     @DynamoDBAttribute(attributeName = "TotalPhotoDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime totalPhotoDate;
+    private LocalDate totalPhotoDate;
     @DynamoDBAttribute(attributeName = "AirPhotoDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime airPhotoDate;
+    private LocalDate airPhotoDate;
     @DynamoDBAttribute(attributeName = "IntroVideoDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime introVideoDate;
+    private LocalDate introVideoDate;
     @DynamoDBAttribute(attributeName = "ConfirmDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime confirmDate;
+    private LocalDate confirmDate;
     @DynamoDBAttribute(attributeName = "SignupMaterialDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime signupMaterialDate;
+    private LocalDate signupMaterialDate;
     @DynamoDBAttribute(attributeName = "UpdateEmailDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime updateEmailDate;
+    private LocalDate updateEmailDate;
     @DynamoDBAttribute(attributeName = "DueDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
     @DynamoDBAttribute(attributeName = "SendPackageDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime sendPackageDate;
+    private LocalDate sendPackageDate;
     @DynamoDBAttribute(attributeName = "ExpirationDate")
     @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
-    private LocalDateTime expirationDate;
+    private LocalDate expirationDate;
     @DynamoDBAttribute(attributeName = "PosterCount")
     private int posterCount;
     @DynamoDBAttribute(attributeName = "FlyerCount")
@@ -59,115 +59,115 @@ public class Planning {
     @DynamoDBAttribute(attributeName = "Year")
     private int year;
 
-    public LocalDateTime getPortraitDate() {
+    public LocalDate getPortraitDate() {
         return portraitDate;
     }
 
-    public void setPortraitDate(LocalDateTime portraitDate) {
+    public void setPortraitDate(LocalDate portraitDate) {
         this.portraitDate = portraitDate;
     }
 
-    public LocalDateTime getNaturePortraitDate() {
+    public LocalDate getNaturePortraitDate() {
         return naturePortraitDate;
     }
 
-    public void setNaturePortraitDate(LocalDateTime naturePortraitDate) {
+    public void setNaturePortraitDate(LocalDate naturePortraitDate) {
         this.naturePortraitDate = naturePortraitDate;
     }
 
-    public LocalDateTime getGroupPhotoDate() {
+    public LocalDate getGroupPhotoDate() {
         return groupPhotoDate;
     }
 
-    public void setGroupPhotoDate(LocalDateTime groupPhotoDate) {
+    public void setGroupPhotoDate(LocalDate groupPhotoDate) {
         this.groupPhotoDate = groupPhotoDate;
     }
 
-    public LocalDateTime getStaffPortraitDate() {
+    public LocalDate getStaffPortraitDate() {
         return staffPortraitDate;
     }
 
-    public void setStaffPortraitDate(LocalDateTime staffPortraitDate) {
+    public void setStaffPortraitDate(LocalDate staffPortraitDate) {
         this.staffPortraitDate = staffPortraitDate;
     }
 
-    public LocalDateTime getStaffGroupDate() {
+    public LocalDate getStaffGroupDate() {
         return staffGroupDate;
     }
 
-    public void setStaffGroupDate(LocalDateTime staffGroupDate) {
+    public void setStaffGroupDate(LocalDate staffGroupDate) {
         this.staffGroupDate = staffGroupDate;
     }
 
-    public LocalDateTime getTotalPhotoDate() {
+    public LocalDate getTotalPhotoDate() {
         return totalPhotoDate;
     }
 
-    public void setTotalPhotoDate(LocalDateTime totalPhotoDate) {
+    public void setTotalPhotoDate(LocalDate totalPhotoDate) {
         this.totalPhotoDate = totalPhotoDate;
     }
 
-    public LocalDateTime getAirPhotoDate() {
+    public LocalDate getAirPhotoDate() {
         return airPhotoDate;
     }
 
-    public void setAirPhotoDate(LocalDateTime airPhotoDate) {
+    public void setAirPhotoDate(LocalDate airPhotoDate) {
         this.airPhotoDate = airPhotoDate;
     }
 
-    public LocalDateTime getIntroVideoDate() {
+    public LocalDate getIntroVideoDate() {
         return introVideoDate;
     }
 
-    public void setIntroVideoDate(LocalDateTime introVideoDate) {
+    public void setIntroVideoDate(LocalDate introVideoDate) {
         this.introVideoDate = introVideoDate;
     }
 
-    public LocalDateTime getConfirmDate() {
+    public LocalDate getConfirmDate() {
         return confirmDate;
     }
 
-    public void setConfirmDate(LocalDateTime confirmDate) {
+    public void setConfirmDate(LocalDate confirmDate) {
         this.confirmDate = confirmDate;
     }
 
-    public LocalDateTime getSignupMaterialDate() {
+    public LocalDate getSignupMaterialDate() {
         return signupMaterialDate;
     }
 
-    public void setSignupMaterialDate(LocalDateTime signupMaterialDate) {
+    public void setSignupMaterialDate(LocalDate signupMaterialDate) {
         this.signupMaterialDate = signupMaterialDate;
     }
 
-    public LocalDateTime getUpdateEmailDate() {
+    public LocalDate getUpdateEmailDate() {
         return updateEmailDate;
     }
 
-    public void setUpdateEmailDate(LocalDateTime updateEmailDate) {
+    public void setUpdateEmailDate(LocalDate updateEmailDate) {
         this.updateEmailDate = updateEmailDate;
     }
 
-    public LocalDateTime getDueDate() {
+    public LocalDate getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(LocalDateTime dueDate) {
+    public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
 
-    public LocalDateTime getSendPackageDate() {
+    public LocalDate getSendPackageDate() {
         return sendPackageDate;
     }
 
-    public void setSendPackageDate(LocalDateTime sendPackageDate) {
+    public void setSendPackageDate(LocalDate sendPackageDate) {
         this.sendPackageDate = sendPackageDate;
     }
 
-    public LocalDateTime getExpirationDate() {
+    public LocalDate getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(LocalDateTime expirationDate) {
+    public void setExpirationDate(LocalDate expirationDate) {
         this.expirationDate = expirationDate;
     }
 
