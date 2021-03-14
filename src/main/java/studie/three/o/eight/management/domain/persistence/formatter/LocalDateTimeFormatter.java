@@ -5,7 +5,6 @@ import org.joda.time.LocalDateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 public class LocalDateTimeFormatter implements DynamoDBTypeConverter<String, LocalDateTime> {

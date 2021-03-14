@@ -5,52 +5,52 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTypeConverted;
 import org.joda.time.LocalDate;
-import studie.three.o.eight.management.domain.persistence.formatter.LocalDateTimeFormatter;
+import studie.three.o.eight.management.domain.persistence.formatter.LocalDateFormatter;
 
 @DynamoDBDocument
 public class Planning {
 
     @DynamoDBAttribute(attributeName = "PortraitDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate portraitDate;
     @DynamoDBAttribute(attributeName = "NaturePortraitDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate naturePortraitDate;
     @DynamoDBAttribute(attributeName = "GroupPhotoDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate groupPhotoDate;
     @DynamoDBAttribute(attributeName = "StaffPortraitDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate staffPortraitDate;
     @DynamoDBAttribute(attributeName = "StaffGroupDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate staffGroupDate;
     @DynamoDBAttribute(attributeName = "TotalPhotoDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate totalPhotoDate;
     @DynamoDBAttribute(attributeName = "AirPhotoDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate airPhotoDate;
     @DynamoDBAttribute(attributeName = "IntroVideoDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate introVideoDate;
     @DynamoDBAttribute(attributeName = "ConfirmDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate confirmDate;
     @DynamoDBAttribute(attributeName = "SignupMaterialDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate signupMaterialDate;
     @DynamoDBAttribute(attributeName = "UpdateEmailDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate updateEmailDate;
     @DynamoDBAttribute(attributeName = "DueDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate dueDate;
     @DynamoDBAttribute(attributeName = "SendPackageDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate sendPackageDate;
     @DynamoDBAttribute(attributeName = "ExpirationDate")
-    @DynamoDBTypeConverted(converter = LocalDateTimeFormatter.class)
+    @DynamoDBTypeConverted(converter = LocalDateFormatter.class)
     private LocalDate expirationDate;
     @DynamoDBAttribute(attributeName = "PosterCount")
     private int posterCount;

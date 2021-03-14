@@ -32,16 +32,10 @@
               {
                 "M": {
                   "PortraitDate": {
-                    "S": "2021-02-06"
+                    "S": "2021-03-08"
                   },
-                  "RoadName": {
-                    "S": "Hjertegræsvej 11"
-                  },
-                  "City": {
-                    "S": "Odense NV"
-                  },
-                  "ZipCode": {
-                    "S": "5210"
+                  "NaturePortraitDate": {
+                    "S": "2021-03-13"
                   }
                 }
               }
@@ -79,6 +73,15 @@
           },
           "Interval": {
             "N": "5"
+          },
+          "ZipCode": {
+            "S": "5210"
+          },
+          "RoadName": {
+            "S": "Hjertegræsvej 11"
+          },
+          "City": {
+            "S": "Odense NV"
           }
         }
       }

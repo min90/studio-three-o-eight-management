@@ -52,12 +52,12 @@ public class Client {
     @DynamoDBAttribute(attributeName = "RoadName")
     private String roadName;
     @DynamoDBAttribute(attributeName = "ZipCode")
-    private int zipCode;
+    private String zipCode;
     @DynamoDBAttribute(attributeName = "City")
     private String city;
     @DynamoDBAttribute(attributeName = "Revenues")
     private ArrayList<Revenue> revenues;
-    @DynamoDBIgnore
+    @DynamoDBAttribute(attributeName = "Plannings")
     private ArrayList<Planning> plannings;
     @DynamoDBIgnore
     private ArrayList<Caretaker> caretakers;
@@ -260,11 +260,11 @@ public class Client {
         this.roadName = roadName;
     }
 
-    public int getZipCode() {
+    public String getZipCode() {
         return zipCode;
     }
 
-    public void setZipCode(int zipCode) {
+    public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
 

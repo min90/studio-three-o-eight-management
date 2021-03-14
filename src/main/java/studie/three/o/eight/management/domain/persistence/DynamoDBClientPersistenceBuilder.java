@@ -5,7 +5,6 @@ import com.amazonaws.services.dynamodbv2.datamodeling.*;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.model.ComparisonOperator;
 import com.amazonaws.services.dynamodbv2.model.ExpectedAttributeValue;
-import jdk.jshell.spi.ExecutionControl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import studie.three.o.eight.management.domain.Client;
@@ -44,13 +43,13 @@ public class DynamoDBClientPersistenceBuilder {
     public Client getClient(String clientId) {
         try {
             Map<String, String> nameMap = new HashMap<>();
-            nameMap.put("#GUID", "GUID");
+            nameMap.put("#Id", "Id");
 
             Map<String, AttributeValue> valueMap = new HashMap<>();
-            valueMap.put(":GUID", new AttributeValue().withS(clientId));
+            valueMap.put(":Id", new AttributeValue().withS(clientId));
 
             DynamoDBQueryExpression dynamoDBQueryExpression = new DynamoDBQueryExpression()
-                    .withKeyConditionExpression("#GUID = :GUID")
+                    .withKeyConditionExpression("#Id = :Id")
                     .withExpressionAttributeNames(nameMap)
                     .withExpressionAttributeValues(valueMap)
                     .withConsistentRead(false);

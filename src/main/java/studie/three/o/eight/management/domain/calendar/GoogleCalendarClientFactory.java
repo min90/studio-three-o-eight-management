@@ -11,7 +11,6 @@ import io.micronaut.context.annotation.Bean;
 import io.micronaut.context.annotation.Factory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import studie.three.o.eight.management.domain.CalendarSync;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -32,7 +31,7 @@ public class GoogleCalendarClientFactory {
         try {
             final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
 
-            InputStream in = CalendarSync.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
+            InputStream in = GoogleCalendarClientFactory.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
             if (in == null) {
                 throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
             }
