@@ -41,7 +41,7 @@ dependencies {
 
 
 application {
-    mainClass.set("studie.three.o.eight.management.Application")
+    mainClass.set("studie.three.o.eight.management.config.Application")
 }
 
 java {

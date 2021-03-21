@@ -1,0 +1,7 @@
+package studie.three.o.eight.management.domain.calendar;
+
+public enum PlanningEvent {
+    PORTRAIT, NATURE_PORTRAIT, GROUP_PHOTO, STAFF_PORTRAIT, STAFF_GROUP,
+    TOTAL_PHOTO, AIR_PHOTO, INTRO_VIDEO, CONFIRM, SIGNUP_MATERIAL, UPDATE_EMAIL,
+    DUE_DATE, SEND_PACKAGE, EXPIRATION
+}

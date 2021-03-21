@@ -30,7 +30,7 @@ public class DynamoDBClientPersistenceBuilder {
     }
 
     public List<Client> getClients(int offset, int limit) {
-        // Might need to use offset and limit
+        //TODO Might need to use offset and limit
         try {
             DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
             return dynamoDBMapper.scan(Client.class, scanExpression);

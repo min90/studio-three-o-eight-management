@@ -1,4 +1,4 @@
-package studie.three.o.eight.management;
+package studie.three.o.eight.management.config;
 
 import io.micronaut.runtime.Micronaut;
 
