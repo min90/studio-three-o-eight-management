@@ -28,10 +28,10 @@ public class CalendarService {
     @Put(value = "/{clientId}")
     @Produces(MediaType.APPLICATION_JSON)
     @Secured(SecurityRule.IS_ANONYMOUS)
-    public HttpResponse<?> syncClientWithGoogleCalendar(String clientId, @QueryValue String calendarId, @QueryValue String colorId) {
+    public HttpResponse<?> syncClientWithGoogleCalendar(String clientId, @QueryValue String calendarId, @QueryValue String photographer) {
         try {
             Client client = dynamoDBClientPersistenceBuilder.getClient(clientId);
-            calendarEventBuilder.createEventForClient(client, calendarId, colorId);
+            calendarEventBuilder.createEventForClient(client, calendarId, photographer);
             return HttpResponse.status(HttpStatus.OK);
         } catch (Exception ex) {
             LOG.error("Failed to sync calendar with client {}", clientId, ex);
